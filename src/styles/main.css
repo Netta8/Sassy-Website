@@ -1,21 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 nav {
   height: 50px;
-  ul {
-    display: flex;
-    justify-content: space-between;
-    li {
-      list-style-type: none;
-      padding: $p-size;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: #0e749e;
-    &:hover {
-      color: hotpink;
-    }
-  }
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 12px;
+}
+nav a {
+  text-decoration: none;
+  color: #0e749e;
+}
+nav a:hover {
+  color: hotpink;
 }
 
 header {
@@ -35,13 +41,14 @@ header h1 {
   flex-flow: row wrap;
   justify-content: center;
 }
+
 .card {
   display: flex;
   flex-direction: column;
-  border: $border-size solid $secondary-color;
-  background-color: $secondary-color;
-  padding: $p-size;
-  margin: $m-size;
+  border: 2px solid #e0ddb2;
+  background-color: #e0ddb2;
+  padding: 12px;
+  margin: 10px;
 }
 
 .img-card {
@@ -49,12 +56,15 @@ header h1 {
   width: 100%;
   background-size: cover;
 }
+
 .img1 {
   background-image: url(../images/mountain.jpg);
 }
+
 .img2 {
   background-image: url(../images/surfer.jpg);
 }
+
 .img3 {
   background-image: url(../images/tree.jpg);
 }
@@ -66,33 +76,33 @@ main {
 }
 
 aside {
-  border: $border-size solid $secondary-color;
-  margin: $m-size;
-  padding: $p-size;
+  border: 2px solid #e0ddb2;
+  margin: 10px;
+  padding: 12px;
 }
 
 article {
-  padding: $p-size;
+  padding: 12px;
 }
 
 footer {
   background-color: #0e749e;
-  ul {
-    display: flex;
-    justify-content: space-around;
-    height: 50px;
-    align-items: center;
-  }
-  li {
-    list-style-type: none;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-    &:hover {
-      color: rgb(255, 219, 237);
-    }
-  }
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+}
+footer li {
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: rgb(255, 219, 237);
 }
 
 @media screen and (min-width: 768px) {
@@ -101,7 +111,7 @@ footer {
     flex-direction: row;
   }
   .content {
-    padding: $p-size;
+    padding: 12px;
   }
   nav ul {
     justify-content: end;
@@ -116,7 +126,6 @@ footer {
     width: 50%;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .card-container {
     justify-content: center;
@@ -127,8 +136,10 @@ footer {
   }
   footer ul {
     justify-content: center;
-    li {
-      padding: $p-size;
-    }
+  }
+  footer ul li {
+    padding: 12px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
